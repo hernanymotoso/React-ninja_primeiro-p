@@ -1,8 +1,8 @@
 'use strict'
-// o Button é um modelo de stateless, pq ele não altera a propriedade do elemento.
 
 import React from 'react'
 
+// o Button é um modelo de stateless, pq ele não altera a propriedade do elemento.
 
 const Button = ({ children, handleClick }) => (
   <button className="main-button" onClick={handleClick}>
@@ -10,7 +10,4 @@ const Button = ({ children, handleClick }) => (
   </button>
 )
 
-Button.propTypes = {
-  handleClick: React.PropTypes.func.isRequired
-}
 export default Button
